@@ -12,7 +12,6 @@
     const themeName = (themeValue.value === true) ? ref("dark-theme") : ref("light-theme");
 
     const toggleTheme = () => {
-      console.log("here");
       themeValue.value = !themeValue.value;
       themeName.value = (themeValue.value === true) ? "dark-theme" : "light-theme";
     }
