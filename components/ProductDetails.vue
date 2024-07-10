@@ -4,15 +4,21 @@
             <div class="p-7">
                 <img :src="product.image" alt="product img" class="mx-auto my-7"/>
             </div>
+
+            <div class="productDetail p-7">
+                <h2 class="text-4xl my-7">{{ product.title }}</h2>
+                <p class="text-xl my-7">Price - ${{ product.price }}</p>
+                <h3 class="font-bold border-b-2 mb-4 pd-2">Description :</h3>
+                <p class="mb-7">{{ product.description }}</p>
+                <p class="text-xl my-7">{{ product.category }}</p>
+
+                <button class="btn flex">
+                    <i class="material-icons mr-2">add_shopping_cart</i>
+                    <span>Add to cart</span>
+                </button>
+            </div>
         </div>
 
-        <div class="productDetail p-7">
-            <h2 class="text-4xl my-7">{{ product.title }}</h2>
-            <p class="text-xl my-7">Price - ${{ product.price }}</p>
-            <h3 class="font-bold border-b-2 mb-4 pd-2">Description :</h3>
-            <p class="mb-7">{{ product.description }}</p>
-            <p class="text-xl my-7">{{ product.category }}</p>
-        </div>
     </div>
 </template>
 
